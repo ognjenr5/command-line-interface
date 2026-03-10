@@ -1,7 +1,7 @@
 #ifndef CLI_TIME_H
 #define CLI_TIME_H
 
-#include <string>
+#include <stringstream>
 #include "Command.h"
 
 class Time : public Command {
@@ -15,5 +15,6 @@ public:
 };
 
 inline std::string Time::get_name() { return "time"; }
+
 
 #endif //CLI_TIME_H
