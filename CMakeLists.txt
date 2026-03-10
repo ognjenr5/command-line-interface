@@ -1,0 +1,52 @@
+cmake_minimum_required(VERSION 4.0)
+project(cli)
+
+set(CMAKE_CXX_STANDARD 20)
+
+add_executable(cli
+        Commands/Batch.cpp
+        Commands/Batch.h
+        Commands/Command.cpp
+        Commands/Command.h
+        Commands/Date.cpp
+        Commands/Date.h
+        Commands/Echo.cpp
+        Commands/Echo.h
+        Commands/Head.cpp
+        Commands/Head.h
+        Commands/MultilineCommand.cpp
+        Commands/MultilineCommand.h
+        Commands/Prompt.cpp
+        Commands/Prompt.h
+        Commands/Rm.cpp
+        Commands/Rm.h
+        Commands/SingleLineCommand.cpp
+        Commands/SingleLineCommand.h
+        Commands/Time.cpp
+        Commands/Time.h
+        Commands/Touch.cpp
+        Commands/Touch.h
+        Commands/Tr.cpp
+        Commands/Tr.h
+        Commands/Truncate.cpp
+        Commands/Truncate.h
+        Commands/Wc.cpp
+        Commands/Wc.h
+        Core/CommandExceptions.cpp
+        Core/CommandExceptions.h
+        Core/Controller.cpp
+        Core/Controller.h
+        Core/FileExceptions.cpp
+        Core/FileExceptions.h
+        Core/Parser.cpp
+        Core/Parser.h
+        Core/Reader.cpp
+        Core/Reader.h
+        InputProcessing/InputStream.cpp
+        InputProcessing/InputStream.h
+        InputProcessing/ISFile.cpp
+        InputProcessing/ISFile.h
+        InputProcessing/ISString.cpp
+        InputProcessing/ISString.h
+        main.cpp
+        Commands/Commands.h)
