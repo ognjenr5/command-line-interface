@@ -13,6 +13,9 @@ std::string Reader::read_line() {
     if (line.length() > 512)
         line.resize(512);
 
+    // Clears EOF error, so the command reading loop can go on working
+    is->clear();
+
     return line;
 }
 

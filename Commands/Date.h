@@ -1,7 +1,7 @@
 #ifndef CLI_DATE_H
 #define CLI_DATE_H
 
-#include <stringstream>
+#include <sstream>
 #include "Command.h"
 
 class Date : public Command{
@@ -18,3 +18,4 @@ inline std::string Date::get_name() { return "date"; }
 
 
 #endif //CLI_DATE_H
+
